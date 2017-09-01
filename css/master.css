@@ -208,3 +208,20 @@
   ul li:nth-child(3) {
     order: 1;
   }
+  body{
+    position: relative;
+    -webkit-animation-name: arriba-y-rebote; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: arriba-y-rebote;
+    animation-duration: 2s;
+  }
+  @keyframes arriba-y-rebote {
+  0%   {margin-top: 0%;}
+  25%  {margin-top: 150%;}
+  60%  {margin-top: 0%;;}
+  75%  {margin-top: 50%;}
+  80%  {margin-top: 25%}
+  85%  {margin-top: 5%}
+  90%  {margin-top: -5%}
+  100% {margin-top: 0%;}
+}
